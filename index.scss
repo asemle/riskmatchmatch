@@ -69,6 +69,41 @@ footer {
   }
 }
 
+@media (min-width:992px) {
+  .wideFooter {
+    padding: 7px 5px 7px 5px;
+    width: 100%;
+    background-color: $navy;
+    text-align: center;
+    height: auto;
+    img {
+      float: left;
+      margin-left: 3%;
+    }
+    ul {
+      list-style: none;
+      margin-left: 90px;
+      padding-left: 0;
+      li {
+        display: inline-block;
+        border-left: 1px solid white;
+        padding: 0 20px 0 20px;
+        text-align: center;
+        margin-top: 17px;
+        a {
+          font-size: 12px;
+          font-weight: 600;
+          color: white;
+        }
+      }
+      #leftmost {
+        border: 0;
+      }
+
+    }
+  }
+}
+
 @media (max-width:991px){
   .menu-holder {
     display: none;
@@ -120,7 +155,9 @@ footer {
       text-decoration: none;
     }
   }
-
+.wideFooter {
+  display: none;
+}
 
 }
 
