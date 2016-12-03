@@ -3,13 +3,18 @@ angular.module('riskMatch', ['ui.bootstrap', 'ui.router'])
   $stateProvider
     .state('careers', {
       url:'/careers',
-      templateUrl: "../views/careers.html",
+      templateUrl:"../views/careers.html",
       // controller: 'packagesCtrl'
     })
-    .state('about', {
+    .state('about-us', {
       url:'/about-us',
-      templateUrl: "../views/about-us.html",
+      templateUrl:"../views/about-us.html",
       // controller: 'aboutCtrl'
+    })
+    .state('news', {
+      url:'/news',
+      templateUrl:"../views/news.html",
+      //controller: 'newsCtrl'
     })
     $urlRouterProvider
       .otherwise('/');

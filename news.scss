@@ -1,0 +1,42 @@
+.newswrap1 {
+background: url('media/News.jpg') no-repeat center center;
+background-size: cover;
+background-attachment: fixed;
+.container {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 135px 5px 180px 5px;
+  height: auto;
+  h1 {
+    margin: 0;
+    color: white;
+    font-weight: bold;
+  }
+  h4 {
+    margin: 0;
+    color: white;
+    font-weight: 300;
+    padding-top: 30px;
+  }
+}
+}
+
+
+@media(min-width: 992px) {
+  .newswrap1 {
+    // height: 562px;
+    .container {
+      padding: 180px 5px 235px 5px;
+      max-width: 1022px;
+      h1 {
+        font-size: 48px;
+        line-height: 72px;
+      }
+      h4 {
+        font-size: 30px;
+        line-height: 45px;
+      }
+    }
+  }
+}
