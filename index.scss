@@ -11,6 +11,7 @@ $greennavy : #143758;
   width: 100%;
   border-radius: 0;
   height: 77px;
+  z-index: 9999;
   img {
     margin-right: auto;
     display: inline;
@@ -76,6 +77,7 @@ footer {
     background-color: $navy;
     text-align: center;
     height: auto;
+    height: 63px;
     img {
       float: left;
       margin-left: 3%;

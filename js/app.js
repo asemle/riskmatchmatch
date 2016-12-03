@@ -6,6 +6,11 @@ angular.module('riskMatch', ['ui.bootstrap', 'ui.router'])
       templateUrl: "../views/careers.html",
       // controller: 'packagesCtrl'
     })
+    .state('about', {
+      url:'/about-us',
+      templateUrl: "../views/about-us.html",
+      // controller: 'aboutCtrl'
+    })
     $urlRouterProvider
       .otherwise('/');
 });

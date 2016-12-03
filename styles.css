@@ -10,7 +10,8 @@
   position: fixed;
   width: 100%;
   border-radius: 0;
-  height: 77px; }
+  height: 77px;
+  z-index: 9999; }
   .navbar img {
     margin-right: auto;
     display: inline;
@@ -60,7 +61,8 @@ footer {
     width: 100%;
     background-color: #04294A;
     text-align: center;
-    height: auto; }
+    height: auto;
+    height: 63px; }
     .wideFooter img {
       float: left;
       margin-left: 3%; }
@@ -335,5 +337,129 @@ footer {
         line-height: 24px;
         padding-top: 20px;
         margin: 0; } }
+.aboutwrap1 {
+  background: url("media/About-Us.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed; }
+  .aboutwrap1 .container {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    padding: 135px 5px 180px 5px;
+    height: auto; }
+    .aboutwrap1 .container h1 {
+      margin: 0;
+      color: white;
+      font-weight: bold; }
+    .aboutwrap1 .container h4 {
+      margin: 0;
+      color: white;
+      font-weight: 300;
+      padding-top: 30px; }
+
+.aboutwrap3 .employee {
+  height: auto;
+  border-bottom: 1px solid #efeeee;
+  min-height: 413px;
+  padding-left: 5px;
+  padding-right: 5px; }
+  .aboutwrap3 .employee .img-holder {
+    height: 155px;
+    width: 155px;
+    background-image: url(media/employees/Kabir-headshot-214x300.jpg);
+    background-size: cover;
+    border-radius: 100px;
+    border: 5px solid #d0d0d0;
+    margin: 0 auto;
+    padding: 0;
+    outline: 1px solid transparent; }
+  .aboutwrap3 .employee .employeeInfo {
+    padding: 0; }
+    .aboutwrap3 .employee .employeeInfo h2 {
+      color: #F15727;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 29px;
+      margin: 11px 0 5px 0; }
+    .aboutwrap3 .employee .employeeInfo h3 {
+      font-size: 15px;
+      line-height: 23px;
+      color: #909090;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 25px; }
+    .aboutwrap3 .employee .employeeInfo p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #6c6c6c;
+      margin-bottom: 1em;
+      font-weight: 300; }
+
+.orange {
+  padding: 65px 0 55px;
+  text-align: center;
+  background-color: #F15727; }
+  .orange h1 {
+    font-size: 30px;
+    line-height: 45px;
+    color: white;
+    font-weight: 300;
+    margin: 0; }
+
+@media (min-width: 768px) {
+  .aboutwrap3 .employee {
+    width: 750px; } }
+@media (max-width: 991px) {
+  .aboutwrap2 .container {
+    padding: 30px 5px 50px 5px;
+    max-width: 750px; }
+    .aboutwrap2 .container p {
+      margin-bottom: 1em;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6c6c6c;
+      font-weight: 300;
+      text-align: center; }
+
+  .aboutwrap3 .employee {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center; } }
+@media (min-width: 992px) {
+  .aboutwrap1 .container {
+    padding: 180px 5px 235px 5px;
+    max-width: 1022px; }
+    .aboutwrap1 .container h1 {
+      font-size: 48px;
+      line-height: 72px; }
+    .aboutwrap1 .container h4 {
+      font-size: 30px;
+      line-height: 45px; }
+
+  .aboutwrap2 .container {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 970px;
+    min-height: 400px; }
+    .aboutwrap2 .container p {
+      margin-bottom: 1em;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6c6c6c;
+      font-weight: 300; }
+
+  .aboutwrap3 .employee {
+    width: 970px;
+    padding: 65px 5px 80px 5px; }
+    .aboutwrap3 .employee .img-holder {
+      margin-right: 5px; } }
+@media (min-width: 1200px) {
+  .aboutwrap3 .employee {
+    margin: auto;
+    width: 1022px; }
+    .aboutwrap3 .employee .img-holder {
+      margin-right: 13px; } }
 
 /*# sourceMappingURL=styles.css.map */
