@@ -8,7 +8,8 @@ angular.module('riskMatch')
     })
   }
   // getNews();
-
+$scope.sorter = '-datePublished';
+$scope.sortDate = 'active'
   $scope.news = [
   {
     "name": "IBA Northeast: Kapnick Insurance partners with Riskmatch",
@@ -325,7 +326,17 @@ angular.module('riskMatch')
     }
     return str;
     }
-
+// "sortDate">Date</a> | <a href="#" ng-click="sorter = 'new.provider[0].name' changeClass()" ng-class="sortPub"
+$scope.changeClass = function() {
+  if($scope.sorter === 'new.provider[0].name') {
+    $scope.sortDate = 'inactive';
+    $scope.sortPub = 'active';
+  }
+  else {
+    $scope.sortDate = 'active';
+    $scope.sortPub = 'inactive';
+  }
+}
 
     $scope.getImg = function(source) {
       if (source ===   "Business Insurance") {

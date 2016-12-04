@@ -7,7 +7,7 @@
 <div class="newswrap2">
   <div class="container sort">
     <p>
-      Sort by: <a href="#" ng-click="sorter = '-datePublished'" class="active">Date</a> | <a href="#">Publication</a>
+      Sort by: <a href="#" ng-click="sorter = '-datePublished'; changeClass()" ng-class="sortDate">Date</a> | <a href="#" ng-click="sorter = 'new.provider[0].name'; changeClass()" ng-class="sortPub">Publication</a>
     </p>
   </div>
   <!-- datePublished
@@ -19,7 +19,7 @@ description
 name
 :
 "RiskMatch™ Appoints Thomas McMahon as Relationship Leader" -->
-  <div class="container news" ng-repeat="new in news | orderBy:'-datePublished'">
+  <div class="container news" ng-repeat="new in news | orderBy: sorter">
     <div class="col-md-2">
       <div class="img-holder">
         <img ng-src="{{getImg(new.provider[0].name)}}" alt="media/newsIcons/logo-w.png"/>
@@ -29,7 +29,7 @@ name
       <h3 class='published'>{{new.datePublished | date: 'longDate'}}</h3>
       <a class='headline' href="#">{{new.name}}</a>
       <p class='excerpt'>{{new.description}}</p>
-      <p class="newsLink">Read full article: <a href="#">{{shorten(new.name)}}</a></p>
+      <p class="newsLink">Read full article: <a href="{{new.url}}">{{shorten(new.name)}}</a></p>
     </div>
 
   </div>

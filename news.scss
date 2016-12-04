@@ -1,12 +1,4 @@
-$skyblue : #639dea;
-$grayline : 1px solid #efeeee;
 
-%ptext {
-  color: $graytext;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-}
 .newswrap1 {
 background: url('media/News.jpg') no-repeat center center;
 background-size: cover;
@@ -15,18 +7,20 @@ background-attachment: fixed;
   margin: auto;
   text-align: center;
   position: relative;
-  padding: 135px 5px 180px 5px;
+  padding: 130px 5px 180px 5px;
   height: auto;
   h1 {
     margin: 0;
     color: white;
     font-weight: bold;
+    line-height: 54px;
   }
   h4 {
     margin: 0;
     color: white;
     font-weight: 300;
     padding-top: 30px;
+    line-height: 27px;
   }
 }
 }
@@ -41,9 +35,12 @@ background-attachment: fixed;
     a {
       @extend %ptext;
       font-weight:normal;
+      text-decoration: none;
       &.active {
         color: $orange;
         font-weight: bold;
+      }
+      &.inactive {
       }
     }
   }

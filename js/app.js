@@ -4,7 +4,12 @@ angular.module('riskMatch', ['ui.bootstrap', 'ui.router'])
     .state('careers', {
       url:'/careers',
       templateUrl:"../views/careers.html",
-      // controller: 'packagesCtrl'
+      controller: 'careerCtrl'
+    })
+    .state('job', {
+      url:'/job/:id',
+      templateUrl:"../views/job.html",
+      controller: 'jobCtrl'
     })
     .state('about-us', {
       url:'/about-us',

@@ -1,0 +1,25 @@
+<div class="container job-name">
+  <a ui-sref="careers">&lt&ltReturn</a>
+  <h1>{{job.name}}</h1>
+</div>
+<div class="container job-description">
+  <p>
+    {{job.description}}
+  </p>
+  <h3>Resonsibilities</h3>
+  <ul>
+    <li ng-repeat="resp in job.responsilbilities">{{resp}}</li>
+  </ul>
+  <h3>Requirements</h3>
+  <ul>
+    <li ng-repeat="req in job.requirements">{{req}}</li>
+  </ul>
+  <h3>About RiskMatch</h3>
+  <p>
+    {{job.about}}
+  </p>
+  <h3>How to Apply</h3>
+  <p>
+    {{job.how}}
+  </p>
+</div>
