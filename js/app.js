@@ -14,7 +14,7 @@ angular.module('riskMatch', ['ui.bootstrap', 'ui.router'])
     .state('news', {
       url:'/news',
       templateUrl:"../views/news.html",
-      //controller: 'newsCtrl'
+      controller: 'newsCtrl'
     })
     $urlRouterProvider
       .otherwise('/');

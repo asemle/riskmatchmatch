@@ -472,6 +472,12 @@ footer {
     width: 1022px; }
     .aboutwrap3 .employee .img-holder {
       margin-right: 13px; } }
+.newswrap2 .sort, .newswrap2 .sort p a, .newswrap2 .news .content .excerpt, .newswrap2 .news .content .newsLink {
+  color: #6c6c6c;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300; }
+
 .newswrap1 {
   background: url("media/News.jpg") no-repeat center center;
   background-size: cover;
@@ -492,6 +498,53 @@ footer {
       font-weight: 300;
       padding-top: 30px; }
 
+.newswrap2 .sort {
+  padding: 50px 5px 0 5px;
+  font-weight: normal; }
+  .newswrap2 .sort p {
+    margin-bottom: 0;
+    text-align: center; }
+    .newswrap2 .sort p a {
+      font-weight: normal; }
+      .newswrap2 .sort p a.active {
+        color: #F15727;
+        font-weight: bold; }
+.newswrap2 .news {
+  padding: 60px 5px 60px 5px;
+  max-width: 1022px;
+  border-bottom: 1px solid #efeeee; }
+  .newswrap2 .news .col-md-2 {
+    padding: 0; }
+    .newswrap2 .news .col-md-2 .img-holder {
+      padding: 25px 15px;
+      height: 100px;
+      width: 100%;
+      border-radius: 4px;
+      background-color: #04294A;
+      text-align: center;
+      margin-bottom: 20px; }
+  .newswrap2 .news .content {
+    padding: 0; }
+    .newswrap2 .news .content .published {
+      color: #6c6c6c;
+      font-weight: 700;
+      padding-bottom: 4px;
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0; }
+    .newswrap2 .news .content .headline {
+      color: #639dea;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: bold;
+      text-decoration: none; }
+    .newswrap2 .news .content .excerpt {
+      padding-top: 25px;
+      margin: 0; }
+    .newswrap2 .news .content .newsLink {
+      padding-top: 25px;
+      margin: 0; }
+
 @media (min-width: 992px) {
   .newswrap1 .container {
     padding: 180px 5px 235px 5px;
@@ -501,6 +554,17 @@ footer {
       line-height: 72px; }
     .newswrap1 .container h4 {
       font-size: 30px;
-      line-height: 45px; } }
+      line-height: 45px; }
+
+  .newswrap2 .sort {
+    width: 970px;
+    padding: 70px 5px 0 5px; }
+    .newswrap2 .sort p {
+      text-align: left;
+      margin-left: 15%;
+      width: 843px; }
+  .newswrap2 .img-holder {
+    max-width: 150px;
+    margin-bottom: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

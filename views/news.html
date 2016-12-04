@@ -4,11 +4,33 @@
     <h4>RiskMatch in the News</h4>
   </div>
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+<div class="newswrap2">
+  <div class="container sort">
+    <p>
+      Sort by: <a href="#" ng-click="sorter = '-datePublished'" class="active">Date</a> | <a href="#">Publication</a>
+    </p>
+  </div>
+  <!-- datePublished
+:
+"2013-11-18T12:04:00"
+description
+:
+"GREENWICH, Conn.--(BUSINESS WIRE)--RiskMatch TM, a business intelligence and analytics firm that provides insurance portfolio management and placement solutions to insurance brokers and insurers, today announced the appointment of Thomas McMahon as ..."
+name
+:
+"RiskMatch™ Appoints Thomas McMahon as Relationship Leader" -->
+  <div class="container news" ng-repeat="new in news | orderBy:'-datePublished'">
+    <div class="col-md-2">
+      <div class="img-holder">
+        <img ng-src="{{getImg(new.provider[0].name)}}" alt="media/newsIcons/logo-w.png"/>
+      </div>
+    </div>
+    <div class="col-md-10 content">
+      <h3 class='published'>{{new.datePublished | date: 'longDate'}}</h3>
+      <a class='headline' href="#">{{new.name}}</a>
+      <p class='excerpt'>{{new.description}}</p>
+      <p class="newsLink">Read full article: <a href="#">{{shorten(new.name)}}</a></p>
+    </div>
+
+  </div>
+</div>
