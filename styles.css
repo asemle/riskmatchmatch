@@ -26,7 +26,7 @@
     text-align: right;
     margin-bottom: 0;
     height: 100%;
-    margin-top: 12px;
+    margin-top: 19px;
     width: 100%;
     float: right; }
   .navbar .right {
@@ -63,7 +63,7 @@ footer {
 
 @media (min-width: 992px) {
   .wideFooter {
-    padding: 7px 5px 7px 5px;
+    padding: 7px 5px;
     width: 100%;
     background-color: #04294A;
     text-align: center;
@@ -79,7 +79,7 @@ footer {
       .wideFooter ul li {
         display: inline-block;
         border-left: 1px solid white;
-        padding: 0 20px 0 20px;
+        padding: 0 20px;
         text-align: center;
         margin-top: 17px; }
         .wideFooter ul li a {
@@ -95,7 +95,7 @@ footer {
     display: none;
     position: absolute;
     right: 76px;
-    bottom: 0px; }
+    bottom: 0; }
 
   .navbar .menu {
     display: block;
@@ -172,7 +172,7 @@ footer {
   .downmenubox {
     position: fixed;
     top: 60px;
-    right: 0px;
+    right: 0;
     border-top: 1px solid white;
     width: 100%;
     height: 224px;
@@ -182,7 +182,7 @@ footer {
       display: inline-block;
       text-align: right;
       margin-top: 19px;
-      padding: 0px 12px 0 30px; }
+      padding: 0 12px 0 30px; }
       .downmenubox .navitem a {
         color: white;
         font-weight: 600; }
@@ -200,7 +200,7 @@ footer {
     background-color: #04294A; }
     .wrapper .container {
       margin: auto;
-      padding: 150px 5px 120px 5px;
+      padding: 150px 5px 120px;
       text-align: center;
       vertical-align: baseline;
       max-width: 750px; }
@@ -220,7 +220,7 @@ footer {
 
   .wrapper2 .container {
     text-align: center;
-    padding: 5em 5px 4em 5px;
+    padding: 5em 5px 4em;
     max-width: 750px;
     min-height: 346px; }
     .wrapper2 .container p {
@@ -244,7 +244,7 @@ footer {
     padding-bottom: 70px; }
     .wrapper3 .container {
       max-width: 750px;
-      padding: 65px 5px 0 5px;
+      padding: 65px 5px 0;
       height: auto;
       min-height: auto;
       text-align: left; }
@@ -265,15 +265,15 @@ footer {
     background-color: #04294A; }
     .wrapper .container {
       margin: auto;
-      padding: 192px 5px 120px 5px;
+      padding: 180px 5px 120px;
       text-align: center;
       vertical-align: baseline; }
       .wrapper .container h1 {
         font-size: 48px;
         font-weight: 700;
         color: white;
-        margin: 0 0 10px 0;
-        line-height: 53px; }
+        margin: 0;
+        line-height: 72px; }
       .wrapper .container h4 {
         font-size: 30px;
         line-height: 45px;
@@ -283,7 +283,7 @@ footer {
         margin: 0; }
 
   .wrapper2 .container {
-    padding: 5em 5px 4em 5px;
+    padding: 5em 5px 4em;
     width: 970px;
     height: 346px; }
     .wrapper2 .container p {
@@ -307,7 +307,7 @@ footer {
     padding-bottom: 130px; }
     .wrapper3 .container {
       width: 970px;
-      padding: 65px 5px 0 5px;
+      padding: 65px 5px 0;
       height: auto; }
       .wrapper3 .container .position-name {
         color: #729dd1;
@@ -321,6 +321,9 @@ footer {
         line-height: 24px;
         padding-top: 20px;
         margin: 0; } }
+@media (min-width: 1200px) {
+  .wrapper2 .container {
+    width: 1020px; } }
 .aboutwrap1 {
   background: url("media/About-Us.jpg") no-repeat center center;
   background-size: cover;
@@ -486,7 +489,7 @@ footer {
     margin: auto;
     text-align: center;
     position: relative;
-    padding: 130px 5px 180px 5px;
+    padding: 130px 5px 180px;
     height: auto; }
     .newswrap1 .container h1 {
       margin: 0;
@@ -501,7 +504,7 @@ footer {
       line-height: 27px; }
 
 .newswrap2 .sort {
-  padding: 50px 5px 0 5px;
+  padding: 50px 5px 0;
   font-weight: normal; }
   .newswrap2 .sort p {
     margin-bottom: 0;
@@ -513,7 +516,7 @@ footer {
         color: #F15727;
         font-weight: bold; }
 .newswrap2 .news {
-  padding: 60px 5px 60px 5px;
+  padding: 60px 5px;
   max-width: 1022px;
   border-bottom: 1px solid #efeeee; }
   .newswrap2 .news .col-md-2 {
@@ -550,7 +553,7 @@ footer {
 
 @media (min-width: 992px) {
   .newswrap1 .container {
-    padding: 180px 5px 235px 5px;
+    padding: 180px 5px 235px;
     max-width: 1022px; }
     .newswrap1 .container h1 {
       font-size: 48px;
@@ -561,7 +564,7 @@ footer {
 
   .newswrap2 .sort {
     width: 970px;
-    padding: 70px 5px 0 5px; }
+    padding: 70px 5px 0; }
     .newswrap2 .sort p {
       text-align: left;
       margin-left: 15%;
@@ -570,10 +573,10 @@ footer {
     max-width: 150px;
     margin-bottom: 0; } }
 .job-name {
-  padding-top: 110px;
   padding-left: 5px;
   padding-right: 5px;
-  max-width: 1022px; }
+  max-width: 1022px;
+  padding-top: 130px; }
   .job-name a {
     color: #639dea;
     margin-bottom: 37px;
@@ -585,7 +588,7 @@ footer {
     line-height: 45px;
     color: #6c6c6c;
     font-weight: 300;
-    margin: 37px 0 65px 0; }
+    margin: 37px 0 65px; }
 
 .job-description {
   font-weight: normal;
@@ -610,24 +613,179 @@ footer {
     text-align: justify;
     margin-bottom: 1em; }
 
+@media (min-width: 768px) {
+  .job-name {
+    width: 750px; }
+
+  .job-description {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .job-name {
+    width: 970px;
+    padding-top: 110px; }
+
+  .job-description {
+    width: 970px; } }
 @media (min-width: 1200px) {
   .job-name {
     width: 1022px; }
 
   .job-description {
     width: 1022px; } }
-@media (min-width: 768px) {
-  .job-name {
-    width: 750px;
-    padding-top: 130px; }
+.container {
+  max-width: 1022px; }
 
-  .job-description {
-    width: 750px; } }
-@media (min-width: 992px) {
-  .job-name {
-    width: 970px; }
+.contactwrap {
+  background: #DDDDDD url("media/cracklybubbles.png") repeat; }
+  .contactwrap .container {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .contactwrap h2 {
+    margin: 0;
+    color: #F15727;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold; }
+  .contactwrap .contactTitle h1 {
+    margin-top: 55px;
+    margin-bottom: 0;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 300;
+    color: #6c6c6c;
+    text-align: center; }
+  .contactwrap .widgets {
+    padding-bottom: 55px; }
+    .contactwrap .widgets .widget {
+      padding: 0;
+      margin-top: 75px;
+      display: block; }
+      .contactwrap .widgets .widget .loca {
+        padding: 0;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 24px;
+        margin-top: 28px;
+        color: #333333;
+        width: 100%;
+        margin-bottom: 75px; }
+        .contactwrap .widgets .widget .loca p {
+          margin-bottom: 0;
+          width: 100% !important; }
+        .contactwrap .widgets .widget .loca .town {
+          font-weight: bold;
+          color: #6c6c6c;
+          width: 100%; }
+        .contactwrap .widgets .widget .loca .email {
+          font-weight: bold;
+          width: 100%; }
+      .contactwrap .widgets .widget .widget-desc {
+        margin: 0;
+        color: #7e7e7e;
+        padding-top: 7px;
+        display: block;
+        width: 100%; }
+      .contactwrap .widgets .widget .subscribe {
+        padding: 0;
+        margin-top: 20px;
+        max-width: 705px; }
+        .contactwrap .widgets .widget .subscribe .emailbox {
+          width: 100% !important;
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+          border: 0;
+          display: block;
+          height: 33px;
+          padding: 2px 1px 1px 5px;
+          font-size: 16px;
+          line-height: 24px;
+          color: #333333;
+          outline: 0; }
+        .contactwrap .widgets .widget .subscribe .button {
+          color: white;
+          background-color: #04294A;
+          border-radius: 5px;
+          border-style: none;
+          font-size: 14px;
+          line-height: 21px;
+          padding: 5px 16px;
+          float: right;
+          margin-top: 10px; }
+      .contactwrap .widgets .widget .social-buttons .follow {
+        height: 60px;
+        margin-top: 119px; }
+      .contactwrap .widgets .widget .social-buttons a {
+        margin: 0 10px 5px 0; }
+        .contactwrap .widgets .widget .social-buttons a .linkedin {
+          height: 34px;
+          width: 34px; }
+        .contactwrap .widgets .widget .social-buttons a .github {
+          height: 30px;
+          width: 30px;
+          margin-bottom: 2px; }
+      .contactwrap .widgets .widget .inputForm {
+        margin-top: 45px;
+        padding: 0; }
+        .contactwrap .widgets .widget .inputForm input {
+          padding: 5px 4px;
+          margin-top: 13px;
+          margin-bottom: 13px;
+          height: 33px;
+          width: 100%;
+          outline: none;
+          font-size: 16px;
+          line-height: 24px;
+          color: #333333;
+          box-sizing: border-box;
+          border: 0;
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75); }
+          .contactwrap .widgets .widget .inputForm input.first {
+            width: 47.5%;
+            margin-right: 5%; }
+          .contactwrap .widgets .widget .inputForm input.last {
+            width: 47.5%; }
+        .contactwrap .widgets .widget .inputForm .medium {
+          width: 100%;
+          height: 160px;
+          box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+          border: 0;
+          resize: none;
+          outline: none;
+          font-size: 16px;
+          line-height: 24px;
+          color: #333333;
+          padding: 6px 8px;
+          overflow-y: scroll;
+          margin-top: 14px; }
+        .contactwrap .widgets .widget .inputForm .charleft {
+          margin-top: 4px;
+          color: #B7B7B7;
+          font-size: 11px; }
+        .contactwrap .widgets .widget .inputForm .button {
+          color: white;
+          background-color: #04294A;
+          border-radius: 5px;
+          border-style: none;
+          font-size: 14px;
+          line-height: 21px;
+          padding: 5px 16px;
+          float: right;
+          width: auto;
+          margin-right: 16px;
+          margin-top: 31px; }
 
-  .job-description {
-    width: 970px; } }
+@media (max-width: 640px) {
+  .first {
+    width: 100% !important;
+    margin-right: 0 !important; }
+
+  .last {
+    width: 100% !important; }
+
+  .inputForm .button {
+    width: 100% !important;
+    margin-right: 0 !important; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1022px; } }
 
 /*# sourceMappingURL=styles.css.map */

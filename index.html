@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="riskMatch">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
 
@@ -12,59 +13,67 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css" media="screen" title="no title">
-  </head>
-  <body>
-<header>
-  <div class="navbar">
-      <a href="#"><img src="media/logo-w.png" alt=""/></a>
-    <div class="col-md-10 right">
-      <ul class="menu-holder" ng-show="menuhidden === undefined || menuhidden === true">
-        <li class="navitem"><a href="#">HOME</a></li>
-        <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
-        <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
-        <li class="navitem"><a ui-sref="news">NEWS</a></li>
-        <li class="navitem"><a href="#">LOGIN</a></li>
-      </ul>
-        <div class='menu'><span class="glyphicon glyphicon-triangle-left" ng-show="!menuhidden"></span><a href="#" data-toggle="collapse" ng-click="menuhidden = !menuhidden" data-target=".menu-holder">MENU</a><span class="glyphicon glyphicon-triangle-right" ng-show="menuhidden"></span></div>
-        <div class="menusmall"><span class="glyphicon glyphicon-triangle-bottom" ng-hide="downmenu"></span><span class="glyphicon glyphicon-triangle-top" ng-show="downmenu"></span><a href="#" ng-click="downmenu = !downmenu" data-target=".dropdown">MENU</a></div>
+</head>
 
+<body ng-controller="indexCtrl">
+    <header>
+        <div class="navbar">
+            <a href="#"><img src="media/logo-w.png" alt="" /></a>
+            <div class="col-md-10 right">
+                <ul class="menu-holder" ng-show="menuhidden === undefined || menuhidden === true">
+                    <li class="navitem"><a href="#">HOME</a></li>
+                    <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
+                    <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
+                    <li class="navitem"><a ui-sref="news">NEWS</a></li>
+                    <li class="navitem"><a href="#">LOGIN</a></li>
+                </ul>
+                <div class='menu'><span class="glyphicon glyphicon-triangle-left" ng-show="!menuhidden"></span><a href="#" data-toggle="collapse" ng-click="menuhidden = !menuhidden" data-target=".menu-holder">MENU</a><span class="glyphicon glyphicon-triangle-right" ng-show="menuhidden"></span></div>
+                <div class="menusmall"><span class="glyphicon glyphicon-triangle-bottom" ng-hide="downmenu"></span><span class="glyphicon glyphicon-triangle-top" ng-show="downmenu"></span><a href="#" ng-click="downmenu = !downmenu" data-target=".dropdown">MENU</a></div>
+
+
+            </div>
+            <div class="downmenubox" ng-show="downmenu">
+                <ul class="downmenu" ng-show="downmenu">
+                    <li class="navitem"><a href="#">HOME</a></li>
+                    <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
+                    <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
+                    <li class="navitem"><a ui-sref="news">NEWS</a></li>
+                    <li class="navitem"><a href="#">LOGIN</a></li>
+                </ul>
+            </div>
+    </header>
+    <ui-view></ui-view>
+    <contact-directive></contact-directive>
 
     </div>
-    <div class="downmenubox" ng-show="downmenu">
-    <ul class="downmenu" ng-show="downmenu">
-      <li class="navitem"><a href="#">HOME</a></li>
-      <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
-      <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
-      <li class="navitem"><a ui-sref="news">NEWS</a></li>
-      <li class="navitem"><a href="#">LOGIN</a></li>
-    </ul>
-  </div>
-</header>
-<ui-view></ui-view>
+    <footer class=wideFooter>
+        <img src="media/logo-w.png" alt="" />
+        <ul>
+            <li id="leftmost"><a href="#">HOME</a></li>
+            <li><a ui-sref="about-us">ABOUT US</a></li>
+            <li><a ui-sref="news">NEWS/MEDIA</a></li>
+            <li><a ui-sref="careers">CAREERS</a></li>
+            <li><a href="#">TERMS AND CONDITIONS</a></li>
+            <li><a href="#">PRIVACY POLICY</a></li>
+        </ul>
 
-<footer class=wideFooter>
-  <img src="media/logo-w.png" alt=""/>
-  <ul>
-    <li id="leftmost"><a href="#">HOME</a></li>
-    <li><a ui-sref="about-us">ABOUT US</a></li>
-    <li><a ui-sref="news">NEWS/MEDIA</a></li>
-    <li><a ui-sref="careers">CAREERS</a></li>
-    <li><a href="#">TERMS AND CONDITIONS</a></li>
-    <li><a href="#">PRIVACY POLICY</a></li>
-  </ul>
-
-</footer>
-<footer><p><span>© 2015 RiskMatch, LLC.</span><span>All rights reserved.</span><span>RiskMatch® is a registered trademark of RiskMatch, LLC.</span><span>U.S. Patents #8,666,788; #9,165,324</span></p></footer>
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
+    </footer>
+    <footer>
+        <p><span>© 2015 RiskMatch, LLC.</span><span>All rights reserved.</span><span>RiskMatch® is a registered trademark of RiskMatch, LLC.</span><span>U.S. Patents #8,666,788; #9,165,324</span></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.3.0/ui-bootstrap.min.js" charset="utf-8"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/indexCtrl.js" charset="utf-8"></script>
+    <script src="./js/contact.js" charset="utf-8"></script>
     <script src="./js/newsCtrl.js" charset="utf-8"></script>
     <script src="./js/newsService.js" charset="utf-8"></script>
     <script src="./js/careerCtrl.js" charset="utf-8"></script>
     <script src="./js/jobCtrl.js" charset="utf-8"></script>
     <script src="./js/jobService.js" charset="utf-8"></script>
-  </body>
+</body>
+
 </html>

@@ -1,27 +1,23 @@
 * {
-  font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
-$skyblue : #639dea;
-$navy : #04294A;
-$greennavy : #143758;
+$skyblue: #639dea;
+$navy: #04294A;
+$greennavy: #143758;
 $graytext: #6c6c6c;
 $orange: #F15727;
 $powderblue: #729dd1;
-$grayline : 1px solid #efeeee;
+$grayline: 1px solid #efeeee;
 
 %ptext {
-  color: $graytext;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
+    color: $graytext;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 }
-
 @import 'index';
-
 @import 'careers';
-
 @import "about-us";
-
 @import "news";
-
 @import "job";
+@import "contact";

@@ -1,81 +1,86 @@
 .job-name {
-  padding-top: 110px;
-  padding-left: 5px;
-  padding-right: 5px;
-  max-width: 1022px;
-  a {
-    color: $skyblue;
-    margin-bottom: 37px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  h1 {
-    font-size: 30px;
-    line-height: 45px;
-    color: #6c6c6c;
-    font-weight: 300;
-    margin: 37px 0 65px 0;
-  }
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: 1022px;
+    padding-top: 130px;
+
+    a {
+        color: $skyblue;
+        margin-bottom: 37px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h1 {
+        font-size: 30px;
+        line-height: 45px;
+        color: #6c6c6c;
+        font-weight: 300;
+        margin: 37px 0 65px;
+    }
 }
 
 .job-description {
-  @extend %ptext;
-  font-weight: normal;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 60px;
-  max-width: 1022px;
-  line-height: 1.5;
-  h3 {
-    margin-bottom: 1em;
-    margin-top: 2em;
-    font-size: 1.125em;
-    font-weight: 700;
-    color: $orange;
-  }
-  ul {
-    padding-left: 0;
-    li {
-      list-style-type: disc;
-      margin-left: 1em;
-      margin-bottom: 1em;
-    }
-  }
-  p {
-    text-align: justify;
-    margin-bottom: 1em;
-  }
-}
+    @extend %ptext;
+    font-weight: normal;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 60px;
+    max-width: 1022px;
+    line-height: 1.5;
 
-@media (min-width: 1200px) {
-  .job-name{
-     width: 1022px;
-   }
-   .job-description{
-      width: 1022px;
+    h3 {
+        margin-bottom: 1em;
+        margin-top: 2em;
+        font-size: 1.125em;
+        font-weight: 700;
+        color: $orange;
+    }
+
+    ul {
+        padding-left: 0;
+
+        li {
+            list-style-type: disc;
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
+    }
+
+    p {
+        text-align: justify;
+        margin-bottom: 1em;
     }
 }
 @media (min-width: 768px) {
-  .job-name{
-    width: 750px;
-     padding-top: 130px;
-   }
-   .job-description{
-      width: 750px;
+    .job-name {
+        width: 750px;
+    }
+
+    .job-description {
+        width: 750px;
     }
 }
-
 @media (min-width: 992px) {
-  .job-name{
-    width: 970px;
-   }
-   .job-description{
-      width: 970px;
+    .job-name {
+        width: 970px;
+        padding-top: 110px;
+    }
+
+    .job-description {
+        width: 970px;
     }
 }
+@media (min-width: 1200px) {
+    .job-name {
+        width: 1022px;
+    }
 
-
+    .job-description {
+        width: 1022px;
+    }
+}
 // <div class="container job-name">
 //   <a ui-sref="careers"></a>
 //   <h1>{{job.name}}</h1>

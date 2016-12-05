@@ -1,30 +1,33 @@
 <div class="wrapper">
-  <div class="container title-container">
-    <h1>Careers</h1>
-    <h4>Make a Difference in Insurance!</h4>
-  </div>
+    <div class="container title-container">
+        <h1>Careers</h1>
+        <h4>Make a Difference in Insurance!</h4>
+    </div>
 </div>
 <div class="wrapper2">
-  <div class="container">
-    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-    <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p>
-  </div>
-  <div class="orange">
-    <h1>Available Positions</h1>
-  </div>
-  </div>
-  <div class="wrapper3">
+    <div class="container">
+        <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive
+            innovation via workplace diversity and empowerment.</p>
+        <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated
+            content in real-time will have multiple touchpoints for offshoring.</p>
+        <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p>
+    </div>
+    <div class="orange">
+        <h1>Available Positions</h1>
+    </div>
+</div>
+<div class="wrapper3">
     <div class="container position" ng-repeat="job in jobs">
-      <a ui-sref="job({id:'{{job.id}}'})" class="position-name">{{job.name}}</a>
-      <p class="position-description">
-        {{shortenD(job.description)}}
+        <a ui-sref="job({id:'{{job.id}}'})" class="position-name">{{job.name}}</a>
+        <p class="position-description">
+            {{shortenD(job.description)}}
     </div>
 
     <div class="container position">
-      <a href="http://riskmatch.com/job/front-end-ui-developer/" class="position-name">Front-End UI Developer</a>
-      <p class="position-description">
-        Work in a fast-moving development environment building tools that will change the future of the insurance industry. We're looking for someone with a passion for the front-end web who can take direction and get things done. Strong front-end html, css, and javascript skills are required.
-      </p>
+        <a href="http://riskmatch.com/job/front-end-ui-developer/" class="position-name">Front-End UI Developer</a>
+        <p class="position-description">
+            Work in a fast-moving development environment building tools that will change the future of the insurance industry. We're looking for someone with a passion for the front-end web who can take direction and get things done. Strong front-end html, css,
+            and javascript skills are required.
+        </p>
     </div>
-  </div>
+</div>

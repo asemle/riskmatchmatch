@@ -1,16 +1,16 @@
 <div class="newswrap1">
-  <div class="container">
-    <h1>News/Media</h1>
-    <h4>RiskMatch in the News</h4>
-  </div>
+    <div class="container">
+        <h1>News/Media</h1>
+        <h4>RiskMatch in the News</h4>
+    </div>
 </div>
 <div class="newswrap2">
-  <div class="container sort">
-    <p>
-      Sort by: <a href="#" ng-click="sorter = '-datePublished'; changeClass()" ng-class="sortDate">Date</a> | <a href="#" ng-click="sorter = 'new.provider[0].name'; changeClass()" ng-class="sortPub">Publication</a>
-    </p>
-  </div>
-  <!-- datePublished
+    <div class="container sort">
+        <p>
+            Sort by: <a href="#" ng-click="sorter = '-datePublished'; changeClass()" ng-class="sortDate">Date</a> | <a href="#" ng-click="sorter = 'new.provider[0].name'; changeClass()" ng-class="sortPub">Publication</a>
+        </p>
+    </div>
+    <!-- datePublished
 :
 "2013-11-18T12:04:00"
 description
@@ -19,18 +19,18 @@ description
 name
 :
 "RiskMatch™ Appoints Thomas McMahon as Relationship Leader" -->
-  <div class="container news" ng-repeat="new in news | orderBy: sorter">
-    <div class="col-md-2">
-      <div class="img-holder">
-        <img ng-src="{{getImg(new.provider[0].name)}}" alt="media/newsIcons/logo-w.png"/>
-      </div>
-    </div>
-    <div class="col-md-10 content">
-      <h3 class='published'>{{new.datePublished | date: 'longDate'}}</h3>
-      <a class='headline' href="#">{{new.name}}</a>
-      <p class='excerpt'>{{new.description}}</p>
-      <p class="newsLink">Read full article: <a href="{{new.url}}">{{shorten(new.name)}}</a></p>
-    </div>
+    <div class="container news" ng-repeat="new in news | orderBy: sorter">
+        <div class="col-md-2">
+            <div class="img-holder">
+                <img ng-src="{{getImg(new.provider[0].name)}}" alt="media/newsIcons/logo-w.png" />
+            </div>
+        </div>
+        <div class="col-md-10 content">
+            <h3 class='published'>{{new.datePublished | date: 'longDate'}}</h3>
+            <a class='headline' href="{{new.url}}">{{new.name}}</a>
+            <p class='excerpt'>{{new.description}}</p>
+            <p class="newsLink">Read full article: <a href="{{new.url}}">{{shorten(new.name)}}</a></p>
+        </div>
 
-  </div>
+    </div>
 </div>
