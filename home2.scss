@@ -1,0 +1,190 @@
+.brokers {
+  .broker-wrap1 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    position: relative;
+    background-image: url('media/Home-Brokers.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: inherit;
+    .title-cont3 {
+      text-align: center;
+      padding-left: 5px;
+      padding-right: 5px;
+      h1 {
+        margin-top: 50px;
+        font-weight: 300;
+        color: white;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+      h4 {
+        margin-top: 5px;
+        margin-bottom: 36px;
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 300;
+        color: white;
+      }
+    }
+    .box-container {
+      text-align: center;
+      margin-top: 14px;
+      margin: auto;
+      clear: both;
+      height: auto;
+      overflow: hidden;
+      padding-bottom: 10px;
+      float: none;
+      .thirdcol {
+        width: 267px;
+        display: inline-block;
+        float: none;
+        margin-left: 7px;
+        margin-right: 7px;
+        padding: 0;
+        .box-widget {
+          margin: 25px 0 0 0;
+          position: relative;
+          overflow: hidden;
+          border-radius: 3px;
+          box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 1);
+          background-color: white;
+          width: 267px;
+          height: 215px;
+          .box-widget-holder {
+            width: 100%;
+            height: 215px;
+            overflow: hidden;
+            .box-widget-inner {
+              padding: 34px 0 34px 0;
+              .desc {
+                text-align: center;
+                @extend %ptext;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (min-width: 992px) {
+  .brokers {
+    .broker-wrap1 {
+      max-height: 422px;
+      .title-cont3 {
+        padding-bottom: 0;
+        h1 {
+          font-size: 30px;
+          line-height: 45px;
+        }
+        h4 {
+          font-size: 22px;
+          line-height: 33px;
+          margin: 33px 0 33px 0;
+        }
+      }
+      .box-container {
+
+        .thirdcol {
+          .box-widget {
+            margin: 80px 11px 0 11px;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+
+// <div class="brokers">
+//     <div class="broker-wrap1">
+//         <div class="container title-cont3">
+//             <h1>RiskMatch for <b>BROKERS</b></h1>
+//             <h4>All of Your Information in One Place</h4>
+//         </div>
+//         <div class="container box-container">
+//             <div class="col-md-4 thirdcol">
+//                 <div class="box-widget">
+//                     <div class="box-widget-holder">
+//                         <div class="box-widget-inner">
+//                             <div class="image-holder">
+//                                 <img src="" alt="" />
+//                             </div>
+//                             <p class="desc">
+//                                 Analytics & Benchmarking
+//                             </p>
+//                         </div>
+//                     </div>
+//                     <div class="description-hover" style="display: none;">
+//                         <p>Benchmark client coverages and programs; enhance client deliverables and carrier relationships. Identify new business and growth opportunities across your portfolio. </p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div class="col-md-4">
+//                 <div class="box-widget">
+//                     <div class="box-widget-holder">
+//                         <div class="box-widget-inner">
+//                             <div class="image-holder">
+//                                 <img src="" alt="" />
+//                             </div>
+//                             <p class="desc">
+//                                 Role-Based Intelligence
+//                             </p>
+//                         </div>
+//                     </div>
+//                     <div class="description-hover" style="display: none;">
+//                         <p>Obtain continuously enhanced intelligence on carrier appetite, client information, and colleague expertise.</p>
+//                     </div>
+//                 </div>
+//             </div>
+//             <div class="col-md-4">
+//                 <div class="box-widget">
+//                     <div class="box-widget-holder">
+//                         <div class="box-widget-inner">
+//                             <div class="image-holder">
+//                                 <img src="" alt="" />
+//                             </div>
+//                             <p class="desc">
+//                                 Access & Connect
+//                             </p>
+//                         </div>
+//                     </div>
+//                     <div class="description-hover" style="display: none;">
+//                         <p>Benchmark client coverages and programs; enhance client deliverables and carrier relationships. Identify new business and growth opportunities across your portfolio. </p>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     </div>
+//     <div class="broker-wrap2">
+//       <div class="container broker-wrap2-inner">
+//         <div class="col-md-5 words">
+//           <h1 class='words-title'>The RiskMatch® platform organizes your company, client and carrier relationships in unique ways that help drive results. Take a minute to watch a brief video introduction to the RiskMatch platform for brokers. Contact us if you would like an in-depth review of the platform.</h1>
+//           <p class="description">The RiskMatch<sup>®</sup> platform organizes your company, client and carrier relationships in unique ways that help drive results. Take a minute to watch a brief video introduction to the RiskMatch platform for brokers. Contact us if you would like an in-depth review of the platform.</p>
+//           <div class="button-box"><a href="#request">Request Demo</a></div>
+//         </div>
+//         <div class="col-md-7 tv">
+//           <div class="television">
+//             <div class="player-holder">
+//               <div class="player-inner">
+//                 <div class="video-container" style="margin-top: -56.25%">
+//                   <a href="//fast.wistia.net/embed/iframe/k0wo27blej?popover=true" class="wistia-popover[height=720,playerColor=46b0b9,width=1280]"><img style="width:100%" src="https://embed-ssl.wistia.com/deliveries/7637b6e3aa64d10c8701bd0409f83d01e8b14a5f.jpg?image_play_button=true&amp;image_play_button_color=46b0b9e0&amp;image_crop_resized=500x281" alt=""></a><br>
+//                   <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+// </div>

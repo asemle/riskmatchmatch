@@ -21,7 +21,7 @@
             <a href="#"><img src="media/logo-w.png" alt="" /></a>
             <div class="col-md-10 right">
                 <ul class="menu-holder" ng-show="menuhidden === undefined || menuhidden === true">
-                    <li class="navitem"><a href="#">HOME</a></li>
+                    <li class="navitem"><a ui-sref="home">HOME</a></li>
                     <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
                     <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
                     <li class="navitem"><a ui-sref="news">NEWS</a></li>
@@ -34,7 +34,7 @@
             </div>
             <div class="downmenubox" ng-show="downmenu">
                 <ul class="downmenu" ng-show="downmenu">
-                    <li class="navitem"><a href="#">HOME</a></li>
+                    <li class="navitem"><a ui-sref="home">HOME</a></li>
                     <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
                     <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
                     <li class="navitem"><a ui-sref="news">NEWS</a></li>
@@ -43,13 +43,13 @@
             </div>
     </header>
     <ui-view></ui-view>
-    <contact-directive></contact-directive>
+    <contact-directive id="request"></contact-directive>
 
     </div>
     <footer class=wideFooter>
         <img src="media/logo-w.png" alt="" />
         <ul>
-            <li id="leftmost"><a href="#">HOME</a></li>
+            <li id="leftmost"><a ui-sref="home">HOME</a></li>
             <li><a ui-sref="about-us">ABOUT US</a></li>
             <li><a ui-sref="news">NEWS/MEDIA</a></li>
             <li><a ui-sref="careers">CAREERS</a></li>

@@ -39,8 +39,8 @@
                     <input type="text" name="company" class='company' tabindex="3" placeholder="Company*">
                     <input type="text" name="email" class='email2' tabindex="4" placeholder="Email*">
                     <input type="text" name="phone" class='phone' tabindex="5" placeholder="Phone">
-                    <textarea class='textarea medium' tabindex="6" rows="10" cols="50" placeholder="Additional Comments"></textarea>
-                    <div class="charleft">0 of 250 max characters</div>
+                    <textarea class='textarea medium' tabindex="6" rows="10" cols="50" maxlength="250" placeholder="Additional Comments" ng-model="comment"></textarea>
+                    <div class="charleft">{{0 + comment.length}} of 250 max characters</div>
                     <input type="submit" name="name" value="Submit" tabindex="7" class='button'>
                 </div>
             </div>
