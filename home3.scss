@@ -1,10 +1,10 @@
-.brokers {
+.carriers {
   padding-bottom: 130px;
-  .broker-wrap1 {
+  .carrier-wrap1 {
     padding-bottom: 20px;
     padding-top: 30px;
     position: relative;
-    background-image: url('media/Home-Brokers.jpg');
+    background-image: url('media/unnamed.jpg');
     background-size: cover;
     background-attachment: fixed;
     max-height: inherit;
@@ -19,6 +19,7 @@
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 0;
+
       }
       h4 {
         margin-top: 5px;
@@ -27,6 +28,9 @@
         line-height: 27px;
         font-weight: 300;
         color: white;
+        b {
+          font-size: 27px;
+        }
       }
     }
     .box-container {
@@ -106,10 +110,10 @@
       }
     }
   }
-  .broker-wrap2 {
+  .carrier-wrap2 {
     padding-top: 30px;
     background: linear-gradient(to bottom, #e5e5e5 0%,#ffffff 25%,#ffffff 25%,#ffffff 100%);
-    .broker-wrap2-inner {
+    .carrier-wrap2-inner {
       padding: 0 5px 0 5px;
       .words {
         margin-top: 15px;
@@ -184,9 +188,9 @@
 
 
 @media (min-width: 768px) {
-  .brokers {
-    .broker-wrap2 {
-      .broker-wrap2-inner {
+  .carriers{
+    .carrier-wrap2 {
+      .carrier-wrap2-inner {
         .tv {
           .television {
             height: 430px;
@@ -201,19 +205,25 @@
 
 
 @media (min-width: 992px) {
-  .brokers {
-    .broker-wrap1 {
+  .carriers{
+    .carrier-wrap1 {
       max-height: 422px;
       .title-cont3 {
         padding-bottom: 0;
         h1 {
           font-size: 30px;
           line-height: 45px;
+          b {
+            font-size: 30px;
+          }
         }
         h4 {
           font-size: 22px;
           line-height: 33px;
           margin: 29px 0 29px 0;
+          b {
+            font-size: 48px;
+          }
         }
       }
       .box-container {
@@ -225,12 +235,13 @@
         }
       }
     }
-    .broker-wrap2 {
+    .carrier-wrap2 {
       padding-top: 170px;
-      .broker-wrap2-inner {
+      .carrier-wrap2-inner {
         .words {
           margin-top: 0;
           text-align: left;
+          padding-left: 41px;
           h1 {
             margin: 0;
             font-size: 30px;
@@ -252,7 +263,7 @@
             height: 430px;
             position: relative;
             background: url('media/monitor.png') no-repeat left center;
-            margin-left: 50px;
+            margin-right: 50px;
             padding: 0!important;
             .player-holder {
               height: 277px;
@@ -266,28 +277,3 @@
     }
   }
 }
-
-
-
-//     <div class="broker-wrap2">
-//       <div class="container broker-wrap2-inner">
-//         <div class="col-md-5 words">
-//           <h1 class='words-title'>The RiskMatch® platform organizes your company, client and carrier relationships in unique ways that help drive results. Take a minute to watch a brief video introduction to the RiskMatch platform for brokers. Contact us if you would like an in-depth review of the platform.</h1>
-//           <p class="description">The RiskMatch<sup>®</sup> platform organizes your company, client and carrier relationships in unique ways that help drive results. Take a minute to watch a brief video introduction to the RiskMatch platform for brokers. Contact us if you would like an in-depth review of the platform.</p>
-//           <div class="button-box"><a href="#request">Request Demo</a></div>
-//         </div>
-//         <div class="col-md-7 tv">
-//           <div class="television">
-//             <div class="player-holder">
-//               <div class="player-inner">
-//                 <div class="video-container" style="margin-top: -56.25%">
-//                   <a href="//fast.wistia.net/embed/iframe/k0wo27blej?popover=true" class="wistia-popover[height=720,playerColor=46b0b9,width=1280]"><img style="width:100%" src="https://embed-ssl.wistia.com/deliveries/7637b6e3aa64d10c8701bd0409f83d01e8b14a5f.jpg?image_play_button=true&amp;image_play_button_color=46b0b9e0&amp;image_crop_resized=500x281" alt=""></a><br>
-//                   <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/popover-v1.js"></script>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-// </div>
