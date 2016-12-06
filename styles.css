@@ -802,7 +802,9 @@ footer {
     background-color: rgba(255, 255, 255, 0.06);
     height: 40px;
     font-size: 14px;
-    line-height: 21px; }
+    line-height: 21px;
+    text-decoration: none;
+    cursor: pointer; }
 
 .homewrap-1 {
   height: 100vh;
@@ -1047,7 +1049,8 @@ footer {
             font-size: 16px;
             line-height: 24px;
             font-weight: normal;
-            text-decoration: none; }
+            text-decoration: none;
+            cursor: pointer; }
       .brokers .broker-wrap2 .broker-wrap2-inner .tv {
         padding: 0; }
         .brokers .broker-wrap2 .broker-wrap2-inner .tv .television {
@@ -1243,7 +1246,8 @@ footer {
             font-size: 16px;
             line-height: 24px;
             font-weight: normal;
-            text-decoration: none; }
+            text-decoration: none;
+            cursor: pointer; }
       .carriers .carrier-wrap2 .carrier-wrap2-inner .tv {
         padding: 0; }
         .carriers .carrier-wrap2 .carrier-wrap2-inner .tv .television {
@@ -1375,7 +1379,9 @@ footer {
         padding: 8px 16px;
         font-size: 16px;
         line-height: 24px;
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        text-decoration: none;
+        cursor: pointer; }
 
 @media (min-width: 451px) {
   .side-menu {
