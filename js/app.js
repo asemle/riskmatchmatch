@@ -1,11 +1,11 @@
 angular.module('riskMatch', ['ui.bootstrap', 'ui.router'])
 .config(function ($stateProvider, $urlRouterProvider) {
   $stateProvider
-  .state('home', {
-    url:'/',
-    templateUrl: "../views/home.html",
-    
-  })
+    .state('home', {
+      url:'/',
+      templateUrl: "../views/home.html",
+      controller: 'homeCtrl'
+    })
     .state('careers', {
       url:'/careers',
       templateUrl:"../views/careers.html",

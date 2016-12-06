@@ -1035,7 +1035,8 @@ footer {
           line-height: 24px; }
         .brokers .broker-wrap2 .broker-wrap2-inner .words .button-box2 {
           width: 100%;
-          margin: 0; }
+          margin: 0;
+          padding-left: 0; }
           .brokers .broker-wrap2 .broker-wrap2-inner .words .button-box2 a {
             color: white;
             border-radius: 3px;
@@ -1211,7 +1212,7 @@ footer {
     .carriers .carrier-wrap2 .carrier-wrap2-inner {
       padding: 0 5px 0 5px; }
       .carriers .carrier-wrap2 .carrier-wrap2-inner .words {
-        margin-top: 15px;
+        margin-top: 0px;
         padding: 0;
         text-align: center;
         color: #6c6c6c;
@@ -1230,7 +1231,8 @@ footer {
           line-height: 24px; }
         .carriers .carrier-wrap2 .carrier-wrap2-inner .words .button-box2 {
           width: 100%;
-          margin: 0; }
+          margin: 0;
+          padding-left: 0px; }
           .carriers .carrier-wrap2 .carrier-wrap2-inner .words .button-box2 a {
             color: white;
             border-radius: 3px;
@@ -1289,8 +1291,9 @@ footer {
     .carriers .carrier-wrap1 .box-container .thirdcol .box-widget {
       margin: 80px 11px 0 11px; }
   .carriers .carrier-wrap2 {
-    padding-top: 170px; }
+    padding-top: 220px; }
     .carriers .carrier-wrap2 .carrier-wrap2-inner .words {
+      float: right;
       margin-top: 0;
       text-align: left;
       padding-left: 41px; }

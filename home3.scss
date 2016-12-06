@@ -116,7 +116,7 @@
     .carrier-wrap2-inner {
       padding: 0 5px 0 5px;
       .words {
-        margin-top: 15px;
+        margin-top: 0px;
         padding: 0;
         text-align: center;
         color: $graytext;
@@ -138,6 +138,7 @@
         .button-box2 {
           width: 100%;
           margin: 0;
+          padding-left: 0px;
           a {
           color: white;
           border-radius: 3px;
@@ -236,9 +237,10 @@
       }
     }
     .carrier-wrap2 {
-      padding-top: 170px;
+      padding-top: 220px;
       .carrier-wrap2-inner {
         .words {
+          float: right;
           margin-top: 0;
           text-align: left;
           padding-left: 41px;

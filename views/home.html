@@ -181,6 +181,11 @@
     </div>
     <div class="carrier-wrap2">
       <div class="container carrier-wrap2-inner">
+        <div class="col-md-5 words">
+          <h1>Introducing RiskMatch for Carriers</h1>
+          <p class="description">The RiskMatch<sup>®</sup> platform elevates your broker relationship management capabilities and enhances opportunity targeting of your unique product offerings. Patented to match and connect to the right opportunity every time. Take a minute to watch a brief introduction to the RiskMatch platform for carriers. Contact us if you would like an in-depth review of the platform.</p>
+          <p class="button-box2"><a href="#request">Request Demo</a></p>
+        </div>
         <div class="col-md-7 tv">
           <div class="television">
             <div class="player-holder">
@@ -193,15 +198,26 @@
             </div>
           </div>
         </div>
-        <div class="col-md-5 words">
-          <h1>Introducing RiskMatch for Carriers</h1>
-          <p class="description">The RiskMatch<sup>®</sup> platform elevates your broker relationship management capabilities and enhances opportunity targeting of your unique product offerings. Patented to match and connect to the right opportunity every time. Take a minute to watch a brief introduction to the RiskMatch platform for carriers. Contact us if you would like an in-depth review of the platform.</p>
-          <p class="button-box2"><a href="#request">Request Demo</a></p>
-        </div>
       </div>
     </div>
 </div>
-
+<div class="media">
+  <div class="media-wrap1">
+    <div class="container title-cont4">
+      <h1>News and Media</h1>
+    </div>
+  </div>
+  <div class="media-wrap2">
+    <div class="container newslist-holder">
+      <div class="newslist">
+        <div class="newsItem" ng-repeat="new in frontpagenews | orderBy:datePublished">
+          <h3 class="itemDate">{{new.datePublished}}</h3>
+          <a class="itemTitle" href="{{new.storyUrl}}">{{new.name}}</a>
+          <p class="itemSummary">{{new.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
