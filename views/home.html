@@ -213,9 +213,10 @@
         <div class="newsItem" ng-repeat="new in frontpagenews | orderBy:datePublished">
           <h3 class="itemDate">{{new.datePublished}}</h3>
           <a class="itemTitle" href="{{new.storyUrl}}">{{new.name}}</a>
-          <p class="itemSummary">{{new.description}}</p>
+          <p class="itemSummary">{{new.description}}<a href="{{new.storyUrl}}"> (Read More)</a></p>
         </div>
       </div>
+      <p class="button"><a ui-sref="news">View All</a></p>
     </div>
   </div>
 </div>
