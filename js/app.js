@@ -3,27 +3,27 @@ angular.module('riskMatch', ['ui.bootstrap', 'ui.router'])
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: "./views/home.html",
+                templateUrl: "/views/home.html",
                 controller: 'homeCtrl'
             })
             .state('careers', {
                 url: '/careers',
-                templateUrl: "./views/careers.html",
+                templateUrl: "/views/careers.html",
                 controller: 'careerCtrl'
             })
             .state('job', {
                 url: '/job/:id',
-                templateUrl: "./views/job.html",
+                templateUrl: "/views/job.html",
                 controller: 'jobCtrl'
             })
             .state('about-us', {
                 url: '/about-us',
-                templateUrl: "./views/about-us.html",
+                templateUrl: "views/about-us.html",
                 // controller: 'aboutCtrl'
             })
             .state('news', {
                 url: '/news',
-                templateUrl: "./views/news.html",
+                templateUrl: "views/news.html",
                 controller: 'newsCtrl'
             })
         $urlRouterProvider
