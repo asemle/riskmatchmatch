@@ -77,6 +77,9 @@ footer {
     }
 }
 @media (min-width:992px) {
+  .navbar {
+    height: 71px;
+  }
     .wideFooter {
         padding: 7px 5px;
         width: 100%;
@@ -260,7 +263,7 @@ footer {
     }
     }
     .right {
-        margin-top: 12px;
+        margin-top: 19px;
     }
 
     .menu a {
@@ -288,6 +291,13 @@ footer {
     }
 }
 @media (max-width: 767px) {
+  .navbar {
+    height: 68px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+        margin-bottom: 17px;
+
+  }
     .menusmall {
         display: block;
         float: right;
@@ -304,7 +314,6 @@ footer {
             padding-right: 8px;
             position: absolute;
             right: -24px;
-
             &:hover {
                 color: #669FE7;
                 text-decoration: none;
@@ -346,11 +355,11 @@ footer {
         background-color: $navy;
 
         .navitem {
-            width: 100%;
+            width: 100%!important;
             display: inline-block;
             text-align: right;
             margin-top: 19px;
-            padding: 0 12px 0 30px;
+            padding: 0 20px 0 30px;
 
             a {
                 color: white;
