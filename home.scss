@@ -1,177 +1,192 @@
-
 .button-box {
-  position: absolute;
-  bottom: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
-  text-align: center;
-  a {
-  color: white;
-  border-radius: 3px;
-  padding: 5px 12px;
-  border: 1px solid rgba(255,255,255, .6);
-  background-color: rgba(255,255,255, 0.06);
-  height: 40px;
-  font-size: 14px;
-  line-height: 21px;
-  text-decoration: none;
-  cursor: pointer;
-  }
+    position: absolute;
+    bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+
+    a {
+        color: white;
+        border-radius: 3px;
+        padding: 5px 12px;
+        border: 1px solid rgba(255,255,255, .6);
+        background-color: rgba(255,255,255, 0.06);
+        height: 40px;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 .homewrap-1 {
-  height: 100vh;
-  background: url('media/Home-Network-Bubbles1.jpg') no-repeat center center;
-  background-size: cover;
+    height: 100vh;
+    background: url('media/Home-Network-Bubbles1.jpg') no-repeat center center;
+    background-size: cover;
 
-  .page-title {
-    position: absolute;
-    top: 48vh;
-    text-align: center;
-    width: 100%;
-    h1 {
-      color: white;
-      font-weight: 300;
-      text-shadow: 2px 2px 2px #000;
-      font-size: 22px;
-      line-height: 33px;
-      margin: 0;
-    }
-  }
-}
-.intro {
-  .intro-wrap1 {
-    padding: 25px 0 25px 0;
-    position: relative;
-    .container {
-      padding-left: 5px;
-      padding-right: 5px;
-      h1 {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-size: 20px;
-        line-height: 30px;
-        color: #737373;
-        font-weight: 300;
+    .page-title {
+        position: absolute;
+        top: 48vh;
         text-align: center;
-      }
-    }
-    .box-container {
-      padding-bottom: 10px;
-        .quartercolumn {
-          border-bottom: 1px solid #e5e5e5;
-          padding: 0;
-          padding-bottom: 15px;
-          margin-top: 15px;
-          margin-bottom: 32px;
-          min-height: 150px!important;
+        width: 100%;
 
-          .qtitle {
-            text-align: center;
-            font-size: 18px;
-            line-height: 27px;
-            font-weight: bold;
-            color: $orange;
-            margin-bottom: 20px;
-            margin-top: 0;
-          }
-          .desc {
-            @extend %ptext;
-            text-align: center;
-            width: 80%;
-            margin: auto;
-            padding-bottom: 10px;
-          }
+        h1 {
+            color: white;
+            font-weight: 300;
+            text-shadow: 2px 2px 2px #000;
+            font-size: 22px;
+            line-height: 33px;
+            margin: 0;
         }
     }
-  }
-  .intro-wrap2 {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    position: relative;
-    background-color: #02284b;
-    .title-cont2 {
-      text-align: center;
-      width: 55%;
-      margin: auto;
-      margin-top: 60px;
-      margin-bottom: 145px;
-      h1 {
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 45px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        color: white;
-      }
+}
+
+.intro {
+    .intro-wrap1 {
+        padding: 25px 0;
+        position: relative;
+
+        .container {
+            padding-left: 5px;
+            padding-right: 5px;
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 20px;
+                line-height: 30px;
+                color: #737373;
+                font-weight: 300;
+                text-align: center;
+            }
+        }
+
+        .box-container {
+            padding-bottom: 10px;
+
+            .quartercolumn {
+                border-bottom: 1px solid #e5e5e5;
+                padding: 0 0 15px;
+                margin-top: 15px;
+                margin-bottom: 32px;
+                min-height: 150px!important;
+
+                .qtitle {
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 27px;
+                    font-weight: bold;
+                    color: $orange;
+                    margin-bottom: 20px;
+                    margin-top: 0;
+                }
+
+                .desc {
+                    @extend %ptext;
+                    text-align: center;
+                    width: 80%;
+                    margin: auto;
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
 
-  }
+    .intro-wrap2 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: relative;
+        background-color: #02284b;
+
+        .title-cont2 {
+            text-align: center;
+            width: 55%;
+            margin: 60px auto 145px;
+
+            h1 {
+                font-weight: 300;
+                font-size: 30px;
+                line-height: 45px;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: white;
+            }
+        }
+    }
 }
 @media (max-width: 393px) {
-  .homewrap-1 {
-    .page-title {
-      position: absolute;
-      top: 46.6vh !important;
+    .homewrap-1 {
+        .page-title {
+            position: absolute;
+            top: 46.6vh !important;
+        }
     }
-  }
 }
 @media (min-width: 992px) {
-  .page-title {
-    position: absolute;
-    top: 47vh!important;
-    h1 {
-      font-size: 40px!important;
-      line-height: 60px!important;
-      text-align: left;
-      padding-left: 2.5em;
-      margin: 0;
-    }
-  }
-  .button-box {
-    a {
-      font-size: 16px!important;
-      line-height: 24px!important;
-    }
-  }
-  .intro {
-    .intro-wrap1 {
-      padding: 50px 0 50px 0;
-      position: relative;
-      .container {
+    .page-title {
+        position: absolute;
+        top: 47vh!important;
+
         h1 {
-          font-size: 24px;
-          line-height: 36px;
-          color: #6c6c6c;
-          margin: 48px 0 48px 0;
+            font-size: 40px!important;
+            line-height: 60px!important;
+            text-align: left;
+            padding-left: 2.5em;
+            margin: 0;
         }
-      }
-      .box-container {
-        padding-bottom: 10px;
-          .quartercolumn {
-            margin-top: 16px;
-            border-bottom: 0;
-            border-right: 1px solid #E5E5E5;
-            padding: 0;
-            &.rightmost {
-              border-right: 0;
+    }
+
+    .button-box {
+        a {
+            font-size: 16px!important;
+            line-height: 24px!important;
+        }
+    }
+
+    .intro {
+        .intro-wrap1 {
+            padding: 50px 0;
+            position: relative;
+
+            .container {
+                h1 {
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #6c6c6c;
+                    margin: 48px 0;
+                }
             }
-          }
+
+            .box-container {
+                padding-bottom: 10px;
+
+                .quartercolumn {
+                    margin-top: 16px;
+                    border-bottom: 0;
+                    border-right: 1px solid #E5E5E5;
+                    padding: 0;
+
+                    &.rightmost {
+                        border-right: 0;
+                    }
+                }
+            }
+        }
+
+        .intro-wrap2 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+
+            .title-cont2 {
+                h1 {
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 54px;
+                    margin-top: 72px;
+                    margin-bottom: 72px;
+                }
+            }
         }
     }
-    .intro-wrap2 {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      .title-cont2 {
-        h1 {
-          font-weight: 300;
-          font-size: 36px;
-          line-height: 54px;
-          margin-top: 72px;
-          margin-bottom: 72px;
-        }
-      }
-    }
-  }
 }

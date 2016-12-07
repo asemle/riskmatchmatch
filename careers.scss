@@ -83,6 +83,7 @@
                 line-height: 24px;
                 padding-top: 20px;
                 margin: 0;
+                font-weight: 300;
             }
         }
     }
@@ -168,15 +169,15 @@
                 line-height: 24px;
                 padding-top: 20px;
                 margin: 0;
+                font-weight: 300;
             }
         }
     }
 }
-
 @media (min-width: 1200px) {
-  .wrapper2 {
-  .container {
-    width: 1020px;
-  }
-}
+    .wrapper2 {
+        .container {
+            width: 1020px;
+        }
+    }
 }
