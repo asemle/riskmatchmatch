@@ -89,6 +89,53 @@ footer {
           .wideFooter ul li a:hover {
             text-decoration: none; }
       .wideFooter ul #leftmost {
+        border: 0; }
+
+  .popover {
+    border-radius: 0;
+    top: 55px !important;
+    max-width: 310px !important;
+    width: 310px !important;
+    border: 0 !important;
+    padding: 0 !important; }
+    .popover .popover-content {
+      text-align: center;
+      background-color: #eee;
+      padding: 0; }
+      .popover .popover-content .login-box p {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        color: #6c6c6c;
+        padding: 15px; }
+      .popover .popover-content .login-box .loginInput {
+        width: 90%;
+        height: 32px;
+        outline: none;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-bottom: 3px solid #ccc; }
+      .popover .popover-content .login-box .login_link {
+        display: inline-block;
+        background-color: #02284b;
+        border-radius: 3px;
+        padding: 4px 16px;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        margin: 8px auto; }
+      .popover .popover-content .login-box .tip {
+        background-color: #F15727;
+        color: white;
+        padding: 7px;
+        font-weight: 300;
+        font-size: 12px;
+        margin: 0;
+        line-height: 18px;
         border: 0; } }
 @media (max-width: 991px) {
   .menu-holder {
@@ -113,6 +160,53 @@ footer {
       position: absolute;
       right: -19px;
       top: 5px; }
+
+  .popover {
+    border-radius: 0;
+    top: 45px !important;
+    max-width: 310px !important;
+    width: 310px !important;
+    border: 0 !important;
+    padding: 0 !important; }
+    .popover .popover-content {
+      text-align: center;
+      background-color: #eee;
+      padding: 0; }
+      .popover .popover-content .login-box p {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+        color: #6c6c6c;
+        padding: 15px; }
+      .popover .popover-content .login-box .loginInput {
+        width: 90%;
+        height: 32px;
+        outline: none;
+        margin-left: 5%;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-bottom: 3px solid #ccc; }
+      .popover .popover-content .login-box .login_link {
+        display: inline-block;
+        background-color: #02284b;
+        border-radius: 3px;
+        padding: 4px 16px;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        margin: 8px auto; }
+      .popover .popover-content .login-box .tip {
+        background-color: #F15727;
+        color: white;
+        padding: 7px;
+        font-weight: 300;
+        font-size: 12px;
+        margin: 0;
+        line-height: 18px;
+        border: 0; }
 
   .right {
     margin-top: 12px; }
@@ -194,7 +288,12 @@ footer {
 
   footer span {
     display: block;
-    margin: 1em 0; } }
+    margin: 1em 0; }
+
+  .popover {
+    z-index: 9999;
+    border-radius: 0;
+    top: 213px !important; } }
 @media (max-width: 991px) {
   .wrapper {
     background-color: #04294A; }
@@ -635,6 +734,18 @@ footer {
 .container {
   max-width: 1022px; }
 
+.orangeg {
+  animation-name: glowOrange;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in; }
+
+@keyframes glowOrange {
+  0% {
+    background-color: none; }
+  45% {
+    background-color: rgba(241, 87, 39, 0.4); }
+  75% {
+    background-color: none; } }
 .contactwrap {
   background: #DDDDDD url("media/cracklybubbles.png") repeat; }
   .contactwrap .container {
@@ -1387,7 +1498,7 @@ footer {
   .side-menu {
     position: fixed;
     top: 50%;
-    z-index: 9999;
+    z-index: 9998;
     right: 0;
     margin-top: -72px;
     width: 32px; }

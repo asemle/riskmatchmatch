@@ -18,14 +18,16 @@
 <body ng-controller="indexCtrl">
     <header>
         <div class="navbar">
-            <a href="#"><img src="media/logo-w.png" alt="" /></a>
+            <a href="http://riskmatch.com/"><img src="media/logo-w.png" alt="" /></a>
             <div class="col-md-10 right">
                 <ul class="menu-holder" ng-show="menuhidden === undefined || menuhidden === true">
                     <li class="navitem"><a ui-sref="home">HOME</a></li>
                     <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
                     <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
                     <li class="navitem"><a ui-sref="news">NEWS</a></li>
-                    <li class="navitem"><a href="#">LOGIN</a></li>
+                    <li class="navitem"><a login-popover popover-template={{login}} popover-placement="bottom" popover-label="Label">LOGIN</a></li>
+
+
                 </ul>
                 <div class='menu'><span class="glyphicon glyphicon-triangle-left" ng-show="!menuhidden"></span><a href="#" data-toggle="collapse" ng-click="menuhidden = !menuhidden" data-target=".menu-holder">MENU</a><span class="glyphicon glyphicon-triangle-right" ng-show="menuhidden"></span></div>
                 <div class="menusmall"><span class="glyphicon glyphicon-triangle-bottom" ng-hide="downmenu"></span><span class="glyphicon glyphicon-triangle-top" ng-show="downmenu"></span><a href="#" ng-click="downmenu = !downmenu" data-target=".dropdown">MENU</a></div>
@@ -38,12 +40,11 @@
                     <li class="navitem"><a ui-sref="about-us">ABOUT US</a></li>
                     <li class="navitem"><a ui-sref="careers">CAREERS</a></li>
                     <li class="navitem"><a ui-sref="news">NEWS</a></li>
-                    <li class="navitem"><a href="#">LOGIN</a></li>
+                    <li class="navitem"><a login-popover popover-template={{login}} popover-placement="bottom" popover-label="Label">LOGIN</a></li>
                 </ul>
             </div>
     </header>
     <ui-view></ui-view>
-    <contact-directive id="request"></contact-directive>
 
     </div>
     <footer class=wideFooter>
@@ -53,8 +54,8 @@
             <li><a ui-sref="about-us">ABOUT US</a></li>
             <li><a ui-sref="news">NEWS/MEDIA</a></li>
             <li><a ui-sref="careers">CAREERS</a></li>
-            <li><a href="#">TERMS AND CONDITIONS</a></li>
-            <li><a href="#">PRIVACY POLICY</a></li>
+            <li><a href="http://riskmatch.com/terms-and-conditions/">TERMS AND CONDITIONS</a></li>
+            <li><a href="http://riskmatch.com/privacy-policy/">PRIVACY POLICY</a></li>
         </ul>
 
     </footer>
@@ -76,6 +77,7 @@
     <script src="./js/jobService.js" charset="utf-8"></script>
     <script src="./js/homeCtrl.js" charset="utf-8"></script>
     <script src="./js/scrollService.js" charset="utf-8"></script>
+    <script src="./js/popover.js" charset="utf-8"></script>
 </body>
 
 </html>

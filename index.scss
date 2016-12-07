@@ -118,6 +118,61 @@ footer {
             }
         }
     }
+    .popover {
+      border-radius: 0;
+      top: 55px!important;
+      max-width: 310px!important;
+      width: 310px!important;
+      border: 0!important;
+      padding: 0!important;
+    .popover-content {
+      text-align: center;
+      background-color: #eee;
+      padding: 0;
+      .login-box {
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 300;
+          color: #6c6c6c;
+          padding: 15px;
+        }
+        .loginInput {
+          width: 90%;
+          height: 32px;
+          outline: none;
+          margin-left: 5%;
+          margin-bottom: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 12px;
+          border: 1px solid #ccc;
+          border-bottom: 3px solid #ccc;
+        }
+        .login_link {
+          display: inline-block;
+          background-color: #02284b;
+          border-radius: 3px;
+          padding: 4px 16px;
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+          margin: 8px auto;
+        }
+        .tip {
+          background-color: $orange;
+          color: white;
+          padding: 7px;
+          font-weight: 300;
+          font-size: 12px;
+          margin: 0;
+          line-height: 18px;
+          border: 0;
+        }
+      }
+    }
+    }
+
 }
 @media (max-width:991px) {
     .menu-holder {
@@ -150,7 +205,60 @@ footer {
             }
         }
     }
-
+    .popover {
+      border-radius: 0;
+      top: 45px!important;
+      max-width: 310px!important;
+      width: 310px!important;
+      border: 0!important;
+      padding: 0!important;
+    .popover-content {
+      text-align: center;
+      background-color: #eee;
+      padding: 0;
+      .login-box {
+        p {
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 300;
+          color: #6c6c6c;
+          padding: 15px;
+        }
+        .loginInput {
+          width: 90%;
+          height: 32px;
+          outline: none;
+          margin-left: 5%;
+          margin-bottom: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+          font-size: 12px;
+          border: 1px solid #ccc;
+          border-bottom: 3px solid #ccc;
+        }
+        .login_link {
+          display: inline-block;
+          background-color: #02284b;
+          border-radius: 3px;
+          padding: 4px 16px;
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+          margin: 8px auto;
+        }
+        .tip {
+          background-color: $orange;
+          color: white;
+          padding: 7px;
+          font-weight: 300;
+          font-size: 12px;
+          margin: 0;
+          line-height: 18px;
+          border: 0;
+        }
+      }
+    }
+    }
     .right {
         margin-top: 12px;
     }
@@ -266,7 +374,14 @@ footer {
             margin: 1em 0;
         }
     }
+    .popover {
+      z-index: 9999;
+      border-radius: 0;
+      top: 213px!important;
+    }
 }
+
+// <div class="login-box">' + '<p>To find your Login Screen, enter your companys name</p>' + '<input class="loginInput" type="text">' + '<a ui-sref="news" target="blank" class="login_link">Go to Login Screen</a>' + '<p class="tip"><b>Tip:</b> Bookmark Your Login Screen for easy access</p>' + '</div>'
 // @keyframes slideInRight {
 //   from {
 //     -webkit-transform: translate3d(100%, 0, 0);

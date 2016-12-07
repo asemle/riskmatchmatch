@@ -4,7 +4,10 @@ angular.module('riskMatch').directive('contactDirective', function () {
       templateUrl: './views/contact.html',
       // template: 'Name: {{customer.name}}<br /> Street: {{customer.street}}'
       // link : function ($scope, element, attrs) { }
-      controller: function($scope) {
-      }
+      // scope: {
+      //   glowOrange: '='
+      // }
+      // controller: function($scope) {
+      // }
     };
 });

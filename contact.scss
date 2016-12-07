@@ -3,7 +3,26 @@
 }
 
 * {}
+.orangeg {
+  animation-name: glowOrange;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
 
+
+  // transition: 4s background-color ease-in-out;
+}
+
+@keyframes glowOrange {
+  0% {
+    background-color: none;
+  }
+  45% {
+    background-color: rgba(241,87,39, 0.4);
+  }
+  75% {
+    background-color: none;
+  }
+}
 
 .contactwrap {
     background: #DDDDDD url('media/cracklybubbles.png') repeat;
@@ -40,6 +59,7 @@
             padding: 0;
             margin-top: 75px;
             display: block;
+
 
             .loca {
                 padding: 0;
@@ -185,6 +205,7 @@
                       margin-top: 31px;
                     }
                   }
+
                 }
         }
     }
