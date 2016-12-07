@@ -303,12 +303,24 @@ footer {
         display: none;
     }
 }
+@media (min-width: 768px) {
+  .downmenubox {
+    display: none;
+  .downmenu {
+    display: none!important;
+  }
+}
+}
 @media (max-width: 767px) {
+
     .navbar {
         height: 68px;
         padding-top: 7px;
         padding-bottom: 7px;
         margin-bottom: 17px;
+        .menu-holder {
+          display: none;
+        }
     }
 
     .menusmall {
