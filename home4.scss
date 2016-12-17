@@ -91,6 +91,12 @@
 //   <a class="itemTitle" href="{{new.storyUrl}}">{{new.name}}</a>
 //   <p class="itemSummary">{{new.description}}</p>
 // </div>
+@media (max-width: 450px) {
+  .side-menu {
+    display: none;
+  }
+}
+
 @media (min-width: 451px) {
     .side-menu {
         position: fixed;

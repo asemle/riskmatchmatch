@@ -1505,6 +1505,9 @@ footer {
         text-decoration: none;
         cursor: pointer; }
 
+@media (max-width: 450px) {
+  .side-menu {
+    display: none; } }
 @media (min-width: 451px) {
   .side-menu {
     position: fixed;
