@@ -25,3 +25,87 @@ $grayline: 1px solid #efeeee;
 @import "home2";
 @import "home3";
 @import "home4";
+
+///iphone 5
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+  .broker-wrap1 {
+    background-attachment: scroll;
+  }
+  .carrier-wrap1 {
+    background-attachment: scroll;
+  }
+  .media-wrap1 {
+    background-attachment: scroll;
+  }
+  .aboutwrap1 {
+    background-attachment: scroll;
+  }
+  .newswrap1 {
+    background-attachment: scroll;
+  }
+}
+///iphone 6
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .broker-wrap1 {
+    background-attachment: scroll;
+  }
+  .carrier-wrap1 {
+    background-attachment: scroll;
+  }
+  .media-wrap1 {
+    background-attachment: scroll;
+  }
+  .aboutwrap1 {
+    background-attachment: scroll;
+  }
+  .newswrap1 {
+    background-attachment: scroll;
+  }
+}
+
+///iphone 6 plus
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
+  .broker-wrap1 {
+    background-attachment: scroll;
+  }
+  .carrier-wrap1 {
+    background-attachment: scroll;
+  }
+  .media-wrap1 {
+    background-attachment: scroll;
+  }
+  .aboutwrap1 {
+    background-attachment: scroll;
+  }
+  .newswrap1 {
+    background-attachment: scroll;
+  }
+}
+
+
+////ipad
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)  {
+  .broker-wrap1 {
+    background-attachment: scroll;
+  }
+  .carrier-wrap1 {
+    background-attachment: scroll;
+  }
+  .media-wrap1 {
+    background-attachment: scroll;
+  }
+  .aboutwrap1 {
+    background-attachment: scroll;
+  }
+  .newswrap1 {
+    background-attachment: scroll;
+  }
+}
